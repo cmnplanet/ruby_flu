@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <!-- <link rel="icon" href="../../../../favicon.ico"> -->
+
+    <title>flubbit</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="../../../../dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="jumbotron.css" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css?family=Catamaran:200" rel="stylesheet">
+
+  </head>
+
+  <nav class="navbar navbar-light bg-light justify-content-between">
+    <%= image_tag("FLUUR.png", alt: "flubbit")%>
+    <!-- <a class="navbar-brand">Navbar</a> -->
+    <form class="form-inline">
+      <!-- <button class="btn btn-outline-success" type="button">flub out!</button> -->
+
+      <%= link_to 'Sign Out', destroy_user_session_path, method: :delete, class: "btn btn-outline-success" %>
+  </form>
+  </nav>
+
+<body>
+  <div class="container">
+    <!-- Example row of columns -->
+    <div class="row">
+      <div class="col-md-6">
+  <h1 style="font-family: 'Catamaran', sans-serif; font-size: 2em; margin: 30px 0px 0px 0px;">my flub needs a fix</h1>
+
+<!-- <div class="form-group"> -->
+<%= render 'form', link: @link %>
+<!-- </div> -->
+
+<div class="btn-group" role="group" aria-label="Basic example">
+
+  <%= link_to 'see flub', @link, class: 'btn btn-outline-info btn-xs' %>
+  <%= link_to 'flub me home', links_path, class: 'btn btn-outline-info btn-xs' %>
+
+</div>
+
+</div>
+
+</div>
+
+
+</div>
+
+
+
+
+<hr>
+
+<footer>
+  <p style="font-family: 'Catamaran', sans-serif; font-size: 1em;">&copy; This Flub Stinks, Inc. 2017</p>
+</footer>
+</div> <!-- /container -->
+
+
+<!-- Bootstrap core JavaScript
+================================================== -->
+<!-- Placed at the end of the document so the pages load faster -->
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script>window.jQuery || document.write('<script src="../../../../assets/js/vendor/jquery.min.js"><\/script>')</script>
+<script src="../../../../assets/js/vendor/popper.min.js"></script>
+<script src="../../../../dist/js/bootstrap.min.js"></script>
+<!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+<script src="../../../../assets/js/ie10-viewport-bug-workaround.js"></script>
+</body>
+</html>
